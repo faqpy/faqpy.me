@@ -2,18 +2,23 @@
     font-family: CalSans;
     src:url(/Font/CalSans-Regular.ttf);
 }
-body {background-color: black; background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/main-icon.png); background-size: cover; background-position: center; background-repeat: no-repeat; -webkit-tap-highlight-color: transparent;}
 :root{
     --ws-d1: hsl(0, 0%, 86%);
     --ws-d2: hsl(0, 0%, 66%);
 }
-body{
+body {
     font-family: CalSans;
     color: whitesmoke;
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/main-icon.png); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    -webkit-tap-highlight-color: transparent;
 }
 main {
     margin-left: 2cm;
@@ -21,9 +26,14 @@ main {
     flex: 1; 
 }
 @media (min-width: 1024px){
-  main{
+  main {
     margin-left: 10cm;
     margin-right: 10cm;
+  } 
+  body {
+    background-size: cover, calc(100% - 6rem); 
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
   }
 }
 .titleSpan{
