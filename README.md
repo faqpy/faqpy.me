@@ -1,5 +1,5 @@
 # Faqpy
-<img src="/assets/main-icon.webp" href="https://faqpy.me" alt="main icon" width="500">
+<img src="/static/assets/main-icon.webp" href="https://faqpy.me" alt="main icon" width="500">
 
 # sv
 
