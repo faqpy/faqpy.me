@@ -80,3 +80,37 @@ footer {
     -ms-user-select: none;
     user-select: none;
 }
+.about-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#dc-avatar{
+    margin: 20px auto;
+    border-radius: 50px;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+#dc-avatar:hover{
+    z-index: 1;
+    border-radius: 20px; 
+    transition: border-radius 0.3s ease; 
+    transform: scale(1.1); 
+    transition:  0.5s ease; 
+    filter: brightness(1); 
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5); 
+}
+#dc-avatar:not(:hover){
+    z-index: 0;
+    transition: border-radius 0.3s ease; 
+    transform: scale(1);
+    transition: 0.25s ease;
+}
+@media (max-width: 1023px){
+    .about-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

@@ -1,6 +1,6 @@
 <main>
     <p style="font-size: 80px; font-style: normal;"><span><a class="titleSpan" href="/about">faqpy</a></span> です!</p>
-    <p style="font-size: 20px; font-style: normal;">(a.k.a <span style="text-decoration: line-through;">witchie</span>)</p>
+    <p style="font-size: 20px; font-style: normal;">(a.k.a witchie)</p>
     <p>Hello, I am faqpy! Thanks for visiting! <CustomEmoji src={miauWhat} name=":miauWhat:"/> <CustomEmoji src={fw} name=":fw:"/></p>
     <p>I'm a self-taught web developer (currently learning).</p>
     <a href="https://bsky.app/profile/faqpy.me" target="_blank"><button class="socialBtns">BSky</button></a>
