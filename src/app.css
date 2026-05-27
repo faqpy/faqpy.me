@@ -44,6 +44,7 @@ main {
 }
 .titleSpan:hover{color: var(--ws-d1);}
 .titleSpan:active{color: var(--ws-d2);}
+a{color: var(--ws-d2);}
 a:visited{color: hsl(331, 89%, 68%);}
 .socialBtns{
     font-family: CalSans;
