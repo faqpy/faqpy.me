@@ -5,8 +5,8 @@
     <p>I'm a self-taught web developer (currently learning).</p>
     <a href="https://bsky.app/profile/faqpy.me" target="_blank"><button class="socialBtns">BSky</button></a>
     <a href="mailto:faqpy@proton.me" target="_blank"><button class="socialBtns">Mail</button></a>
-    <a href="https://discord.com/users/277867160796397568" target="_blank"><button
-            class="socialBtns">Discord</button></a>
+    <a href="https://discord.com/users/277867160796397568" target="_blank"><button class="socialBtns">Discord</button></a>
+    <a href="/contact"><button class="socialBtns">Contact</button></a>
 </main>
 <footer>
     <p>i cnat cod &nbsp;•&nbsp; witchie</p>

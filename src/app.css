@@ -5,6 +5,9 @@
 :root{
     --ws-d1: hsl(343, 90%, 81%);
     --ws-d2: hsl(339, 94%, 93%);
+    --ws-d3: hsl(316, 16%, 28%);
+    --ws-d4: hsl(331, 89%, 68%);
+    --ws-d5: hsl(32, 84%, 88%);
 }
 body {
     font-family: CalSans;
@@ -39,17 +42,17 @@ main {
 }
 .titleSpan{
     text-decoration: none;
-    color: hsl(331, 89%, 68%);
+    color: var(--ws-d4);
     transition: color 0.25s;
 }
 .titleSpan:hover{color: var(--ws-d1);}
 .titleSpan:active{color: var(--ws-d2);}
 a{color: var(--ws-d2);}
-a:visited{color: hsl(331, 89%, 68%);}
+a:visited{color: var(--ws-d4);}
 .socialBtns{
     font-family: CalSans;
-    background-color: hsl(32, 84%, 88%);
-    color: black;
+    background-color: var(--ws-d5);
+    color: var(--ws-d3);
     border: none;
     cursor: pointer;
     border-radius: 999px;
@@ -114,4 +117,36 @@ footer {
         align-items: center;
     }
     
+}
+.contact-form-input, .contact-form-textarea{
+    background-color: var(--ws-d2);
+    border-radius: 10px;
+    border: 1px solid var(--ws-d3);
+    color: var(--ws-d3);
+    padding: 10px;  
+    font-family: inherit;
+    transition: all 0.2s ease;
+    resize: none;
+}
+#contact-form-btn{
+    align-self: flex-end;
+    background-color: var(--ws-d1);
+    color: var(--ws-d2);
+    font-weight: bold;
+    border: solid var(--ws-d3) 2px;
+    padding: 10px 16px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+#contact-form-btn:hover{
+    background-color: var(--ws-d2);
+    color: var(--ws-d3);
+    border-radius: 10px;
+    transition: border-radius 0.25s, background-color 0.25s, color 0.25s ease;
+}
+#contact-form-btn:not(:hover){
+    background-color: var(--ws-d1);
+    color: var(--ws-d2);
+    border-radius: 14px;
+    transition: border-radius 0.25s, background-color 0.25s, color 0.25s ease;
 }
