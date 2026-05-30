@@ -1,6 +1,6 @@
 <main>
-    <p style="font-size: 80px; font-style: normal;"><span><a class="title-span" href={resolve("/about")}>faqpy</a></span> です!</p>
-    <p style="font-size: 20px; font-style: normal;">(a.k.a witchie)</p>
+    <h1><span><a class="title-span" href={resolve("/about")}>faqpy</a></span> です!</h1>
+    <h3>(a.k.a witchie)</h3>
     <p>Heya, I am faqpy! <CustomEmoji src={miauWhat} name=":miauWhat:"/></p>
     <p>I'm a self-taught web developer (currently learning)</p>
     <a href="https://bsky.app/profile/faqpy.me" target="_blank"><button class="social-btns">BSky</button></a>

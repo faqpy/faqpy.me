@@ -30,5 +30,8 @@
 	},
 	"overrides": {
 		"cookie": "^0.7.0"
+	},
+	"dependencies": {
+		"@iconify/svelte": "^5.2.1"
 	}
 }
