@@ -7,7 +7,6 @@
         <textarea required name="message" type="text" class="contact-form-textarea" id="contact-message" rows="3" placeholder="Message"></textarea><br>
         <button type="submit" id="contact-form-btn">Send</button>
     </form>
-
 </main>
 <footer>
     <p>i cnat cod &nbsp;•&nbsp; witchie</p>
