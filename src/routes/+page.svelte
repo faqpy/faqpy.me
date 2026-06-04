@@ -1,12 +1,16 @@
 <main>
     <h1><span><a class="title-span" href={resolve("/about")}>faqpy</a></span> です!</h1>
     <h3>(a.k.a witchie)</h3>
-    <p>Heya, I am faqpy! <CustomEmoji src={miauWhat} name=":miauWhat:"/></p>
-    <p>I'm a self-taught web developer (currently learning)</p>
-    <a href="https://github.com/faqpy/faqpy.me" target="_blank" rel="noopener noreferrer"><button class="social-btns">Source</button></a>
-    <a href="{resolve("/profiles")}"><button class="social-btns">Profiles</button></a>
-    <a href="mailto:faqpy@proton.me" target="_blank" rel="noopener noreferrer"><button class="social-btns">Mail</button></a>
-    <a href={resolve("/contact")}><button class="social-btns">Contact</button></a>
+    <div class="home-container">
+        <p>Heya, I am faqpy! <CustomEmoji src={miauWhat} name=":miauWhat:"/></p>
+        <p>I'm a self-taught web developer (currently learning)</p>
+    </div>
+    <div class="social-btns-container">
+        <a href="https://github.com/faqpy/faqpy.me" target="_blank" rel="noopener noreferrer"><button class="social-btns">Source</button></a>
+        <a href="{resolve("/profiles")}"><button class="social-btns">Profiles</button></a>
+        <a href="mailto:faqpy@proton.me" target="_blank" rel="noopener noreferrer"><button class="social-btns">Mail</button></a>
+        <a href={resolve("/contact")}><button class="social-btns">Contact</button></a>
+    </div>
 </main>
 <footer>
     <p>i cnat cod &nbsp;•&nbsp; witchie</p>
