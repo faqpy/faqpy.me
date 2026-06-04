@@ -11,7 +11,7 @@
   .emoji-link {
     display: inline-block;
     text-decoration: none;
-    cursor: pointer;
+    cursor: text;
   }
   .emoji-img {
     height: 1.2em; 
