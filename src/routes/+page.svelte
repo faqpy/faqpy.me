@@ -8,15 +8,13 @@
     <div class="social-btns-container">
         <a href="https://github.com/faqpy/faqpy.me" target="_blank" rel="noopener noreferrer"><button class="social-btns">Source</button></a>
         <a href="{resolve("/profiles")}"><button class="social-btns">Profiles</button></a>
-        <a href="mailto:faqpy@proton.me" target="_blank" rel="noopener noreferrer"><button class="social-btns">Mail</button></a>
         <a href={resolve("/contact")}><button class="social-btns">Contact</button></a>
     </div>
 </main>
-<footer>
-    <p>i cnat cod &nbsp;•&nbsp; witchie</p>
-</footer>
+<BaseLayoutFooter />
 <script>
     import { resolve } from "$app/paths";
     import CustomEmoji from "$lib/customEmoji.svelte";
-    const miauWhat = "https://cdn.discordapp.com/emojis/1280886209635291137.webp?quality=lossless"
+    const miauWhat = "/assets/emojis/miauWhat.webp";
+    import BaseLayoutFooter from "$lib/baseLayoutFooter.svelte";
 </script>

@@ -10,9 +10,8 @@
     </form>
     <h5 style="color: gray;">This form uses the Web3Forms API.</h5>
 </main>
-<footer>
-    <p>i cnat cod &nbsp;•&nbsp; witchie</p>
-</footer>
+<BaseLayoutFooter />
 <script>
     import { resolve } from "$app/paths";
+    import BaseLayoutFooter from "$lib/baseLayoutFooter.svelte";
 </script>
