@@ -128,7 +128,7 @@ a:visited{color: var(--ws-d4);}
     color: var(--ws-d3);
     padding: 10px;  
     font-family: inherit;
-    transition: all 0.2s ease;
+    transition: all 0.25s ease;
     resize: none;
 }
 #contact-form-btn{
@@ -175,7 +175,7 @@ a:visited{color: var(--ws-d4);}
     cursor: pointer;
     border: 1px solid var(--ws-d7);
     font-family: 'CalSans', sans-serif;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s ease-in-out;
     color: whitesmoke;
 }
 .buttons button:not(:hover) {
