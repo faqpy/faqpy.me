@@ -1,0 +1,45 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+const { frontmatter } = Astro.props;
+---
+
+<html lang="en">
+
+<head>
+    <title>{frontmatter.title}</title>
+</head>
+
+<body>
+    <Header />
+    <main class="layout-main">
+        <article class="content-section">
+            <div class="content-layout">
+                <div class="markdown-prose">
+                    <h1>{frontmatter.title}</h1>
+                    <slot />
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
+<style is:global>
+.markdown-prose {
+    color: var(--md-sys-color-on-surface);
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+}
+.markdown-prose h1, .markdown-prose h2 {
+    color: var(--md-sys-color-primary);
+    font-family: 'Google Sans Flex', system-ui, sans-serif;
+}
+.markdown-prose h1 {font-size: 2.5rem;}
+.markdown-prose h2 {font-size: 1.75rem; color: var(--md-sys-color-secondary);}
+.markdown-prose a {
+    color: var(--md-sys-color-primary);
+    background-color: var(--md-sys-color-error-container);
+    text-decoration: none;
+}
+</style>
