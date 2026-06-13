@@ -1,0 +1,16 @@
+{
+    "extends": "astro/tsconfigs/strict",
+    "compilerOptions": {
+        "moduleResolution": "bundler",
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        ".astro/types.d.ts",
+        "src/**/*",
+        "astro.config.mjs"
+    ],
+    "exclude": [
+        "dist"
+    ]
+}
