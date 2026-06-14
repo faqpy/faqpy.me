@@ -128,7 +128,6 @@ body {
     z-index: 10;
 }
 
-
 .content-section {
     width: 100%;
     background: var(--md-sys-color-surface-container-lowest);
@@ -151,7 +150,6 @@ body {
     gap: var(--layout-gap);
     flex: 1;
 }
-
 
 .card {
     background: var(--md-sys-color-surface);
@@ -229,7 +227,6 @@ body {
     line-height: 1.6;
 }
 
-
 .interactive-list {
     border-radius: var(--list-radius);
     display: flex;
@@ -293,7 +290,6 @@ body {
     color: var(--md-sys-color-outline);
     flex-shrink: 0;
 }
-
 
 .card-actions {
     display: flex;
