@@ -40,6 +40,12 @@ const { frontmatter } = Astro.props;
 .markdown-prose a {
     color: var(--md-sys-color-primary);
     background-color: var(--md-sys-color-error-container);
+    padding: 3px;
+    border-radius: 5px;
     text-decoration: none;
+    display: inline-block;
+}
+.markdown-prose a::selection {
+    color: var(--md-sys-color-error-container);
 }
 </style>
