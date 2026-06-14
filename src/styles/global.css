@@ -99,45 +99,6 @@ body {
     z-index: 2;
 }
 
-.faq-avatar-wrapper {
-    position: relative;
-    z-index: 5;
-    width: 340px;
-    height: 340px;
-    margin: 40px 0;
-    border-radius: 50%;
-    overflow: hidden;
-    background: var(--md-sys-color-surface-container-high);
-    border: 4px solid var(--md-sys-color-surface-container);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    transition: all 0.25s ease;
-}
-
-.faq-avatar-wrapper:hover {
-    border-radius: 80px;
-    transform: rotate(5deg);
-}
-
-.faq-avatar {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    user-select: none;
-    -webkit-user-drag: none;
-}
-
-.faq-fade-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 6em;
-    background: linear-gradient(to bottom, transparent 0%, var(--md-sys-color-surface-container-lowest) 70%);
-    pointer-events: none;
-    z-index: 10;
-}
-
 .content-section {
     width: 100%;
     background: var(--md-sys-color-surface-container-lowest);
@@ -435,10 +396,6 @@ body {
 }
 
 @media (max-width: 600px) {
-    .faq-avatar-wrapper {
-        width: 260px;
-        height: 260px;
-    }
 
     .card {
         padding: 20px 18px;
