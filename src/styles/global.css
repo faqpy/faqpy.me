@@ -415,7 +415,10 @@ body {
     object-fit: cover;
     border-radius: 16px;
     display: block;
+    -webkit-user-select: none;
+    user-select: none;
     -webkit-user-drag: none;
+    -webkit-touch-callout: none;
 }
 
 @media (max-width: 1024px) {
