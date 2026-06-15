@@ -378,8 +378,9 @@ body {
     display: block;
     -webkit-user-select: none;
     user-select: none;
-    -webkit-user-drag: none;
-    -webkit-touch-callout: none;
+}
+.card-image.end {
+    object-fit: contain;
 }
 
 @media (max-width: 1024px) {
