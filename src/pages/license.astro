@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import { Icon } from 'astro-icon/components';
+---
+
+<html lang="en">
+
+<head>
+    <Header />
+</head>
+
+<body>
+    <main class="layout-main">
+
+        <section class="content-section" style="padding-top: 48px;">
+            <div class="content-layout">
+
+                <div class="content-column" style="max-width: 800px; margin: 0 auto; width: 100%;">
+
+                    <div class="card">
+                        <div class="card-icon-wrapper">
+                            <m3e-shape name="soft-burst" class="m3e-icon-bg"
+                                style="--m3e-shape-container-color:var(--md-sys-color-primary);"></m3e-shape>
+                            <Icon name="material-symbols:license" class="card-icon-foreground" />
+                        </div>
+
+                        <h1 class="profile-title">copyright & usage</h1>
+
+                        <div class="card-article">
+                            <ul class="profile-description">
+                                <li>visuals: <br>all gifs, character sprites, and related visual assets from undertale
+                                    and
+                                    deltarune belong to toby fox. this is a personal, non-commercial site, and no
+                                    copyright
+                                    infringement is intended.</li>
+                                <li>audio: <br>the background music currently playing is <span><a
+                                            href="https://www.youtube.com/watch?v=KtC-pl9P3kE" class="btn-footer" target="_blank"
+                                            rel="noreferrer noopener">"It's Raining Somewhere Else"</a></span> composed
+                                    by toby fox. publishing rights are administered by <span><a
+                                            href="https://www.materiamusic.com/" class="btn-footer" target="_blank"
+                                            rel="noreferrer noopener">materia music publishing</a></span>.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        import '@m3e/web/shape';
+    </script>
+</body>
+
+</html>
