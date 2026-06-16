@@ -371,9 +371,14 @@ body {
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    transition: background 0.2s ease;
 }
 
-.footer-fab:hover {
+.footer-fab.mail {
+    left: 16px;
+}
+
+.footer-fab:hover, .footer-fab.mail:hover {
     background: var(--md-sys-color-surface-container-high);
 }
 

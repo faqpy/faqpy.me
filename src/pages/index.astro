@@ -55,16 +55,6 @@ import { Icon } from 'astro-icon/components';
             </div>
             <h2 class="card-heading">socials</h2>
             <div class="interactive-list">
-              <a class="list-item" href="mailto:hi@faqpy.me" target="_blank" rel="noreferrer noopener">
-                <div class="list-icon">
-                  <Icon name="simple-icons:gmail" />
-                </div>
-                <div class="list-content">
-                  <span class="list-title">mail</span>
-                  <span class="text-muted text-small">hi@faqpy.me</span>
-                </div>
-                <Icon name="material-symbols:chevron-forward" class="list-arrow" />
-              </a>
               <a class="list-item" href="https://github.com/faqpy" target="_blank" rel="noreferrer noopener">
                 <div class="list-icon">
                   <Icon name="simple-icons:github" />
@@ -141,7 +131,7 @@ import { Icon } from 'astro-icon/components';
               <Icon name="material-symbols:edit-note" class="card-icon-foreground" />
             </div>
             <h2 class="card-heading">notes</h2>
-            <p class="text-muted text-small align-up">no obsidian-sync-repo yet because i'm lazy and haven't initialized it yet.</p>
+            <p class="text-muted text-small align-up">obsd-sync repo hasn't been initialized yet</p>
             <div class="card-actions">
               <a href="/notes" class="btn-primary">
                 <Icon name="material-symbols:open-in-new" class="btn-icon" />
@@ -180,6 +170,9 @@ import { Icon } from 'astro-icon/components';
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-card">
+        <button class="footer-fab mail" aria-label="contact me" title="mail me!" onclick="window.location.href='mailto:hi@faqpy.me'">
+          <Icon name="simple-icons:gmail" />
+        </button>
         <span class="text-muted text-small"><a href="/license" class="btn-footer">license</a></span>
         <FooterBoombox />
         <button class="footer-fab" id="music-toggle" aria-label="toggle music" title="Toby Fox - It's Raining Somewhere Else (UNDERTALE)">
