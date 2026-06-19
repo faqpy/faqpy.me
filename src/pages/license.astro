@@ -12,9 +12,9 @@ import { Icon } from 'astro-icon/components';
 
 <body>
     <main class="layout-main">
-        <section class="content-section" style="padding-top: 48px;">
+        <section class="content-section">
             <div class="content-layout">
-                <div class="content-column" style="max-width: 800px; margin: 0 auto; width: 100%;">
+                <div class="content-column">
                     <div class="card">
                         <div class="card-icon-wrapper">
                             <m3e-shape name="soft-burst" class="m3e-icon-bg"
@@ -43,6 +43,16 @@ import { Icon } from 'astro-icon/components';
             </div>
         </section>
     </main>
+    <style>
+        .content-section {
+            padding-top: 48px;
+        }
+        .content-column {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+    </style>
     <script>
         import '@m3e/web/shape';
     </script>
