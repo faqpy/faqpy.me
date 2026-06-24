@@ -270,6 +270,56 @@ body {
     margin-top: 4px;
 }
 
+.card-actions.inline-fabs {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.fab {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--md-sys-color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.fab-inline {
+    background: transparent;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.fab-inline:hover {
+    background: color-mix(in srgb, var(--md-sys-color-surface-container-low) 50%, transparent);
+}
+
+.footer-fab {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    background: var(--md-sys-color-surface-container-low);
+}
+
+.footer-fab.mail {
+    right: auto;
+    left: 16px;
+}
+
+.footer-fab:hover {
+    background: var(--md-sys-color-surface-container-high);
+}
+
 .btn-primary {
     background: var(--md-sys-color-surface-container-low);
     color: var(--md-sys-color-on-surface);
@@ -354,34 +404,6 @@ body {
     position: relative;
 }
 
-.footer-fab {
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    font-size: 20px;
-    transform: translateY(-50%);
-    background: var(--md-sys-color-surface-container-low);
-    color: var(--md-sys-color-primary);
-    border: none;
-    outline: none;
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.2s ease;
-}
-
-.footer-fab.mail {
-    left: 16px;
-}
-
-.footer-fab:hover, .footer-fab.mail:hover {
-    background: var(--md-sys-color-surface-container-high);
-}
-
 .icon-hidden {
     display: none;
 }
@@ -422,6 +444,16 @@ body {
 }
 .card-image.gif {
     object-fit: contain;
+}
+
+.card-image-bg {
+    background-image:
+        linear-gradient(rgba(25, 18, 13, 0.75), rgba(25, 18, 13, 0.75)),
+        var(--card-bg-url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 @media (max-width: 1024px) {
