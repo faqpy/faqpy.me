@@ -72,7 +72,7 @@ body {
     flex: 1;
 }
 
-.faq-banner {
+.hero-banner {
     position: relative;
     width: 100%;
     height: calc(100svh - 6em - 40px);
@@ -84,7 +84,7 @@ body {
     background: var(--md-sys-color-surface-container-lowest);
 }
 
-.faq-banner::before {
+.hero-banner::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -97,7 +97,7 @@ body {
     opacity: 0.8;
 }
 
-.faq-banner-content {
+.hero-banner-content {
     position: relative;
     z-index: 2;
 }
@@ -457,7 +457,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .faq-banner {
+    .hero-banner {
         height: calc(100svh - 9em - 40px);
         max-height: 900px;
     }
