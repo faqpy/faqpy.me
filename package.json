@@ -12,7 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@iconify-json/material-symbols": "^1.2.80",
+    "@iconify-json/material-symbols": "^1.2.81",
     "@iconify-json/simple-icons": "^1.2.87",
     "@m3e/web": "^2.5.12",
     "astro": "^6.4.8",
