@@ -440,30 +440,6 @@ body {
     display: none;
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: auto;
-    padding-top: 12px;
-}
-
-.skill-chip {
-    background: var(--md-sys-color-surface-container-high);
-    color: var(--md-sys-color-on-surface);
-    padding: 6px 14px;
-    border-radius: 8px;
-    font-family: var(--font-heading);
-    font-size: 0.95rem;
-    font-weight: 500;
-    user-select: none;
-}
-
-.skill-chip.learning {
-    background: var(--md-sys-color-error-container);
-    color: var(--md-sys-color-on-error-container);
-}
-
 .card-image {
     width: 100%;
     height: auto;
