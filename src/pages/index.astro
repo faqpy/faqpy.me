@@ -20,11 +20,19 @@ import { Icon } from 'astro-icon/components';
     </section>
 
     <section class="content-section">
+        <nav class="card-jump-nav" aria-label="Jump to site sections">
+          <a href="#about">about</a>
+          <a href="#socials">socials</a>
+          <a href="#friend">friend</a>
+          <a href="#games">mmmgemes</a>
+          <a href="#notes">notes</a>
+          <a href="#newspaper">news</a>
+        </nav>
       <div class="content-layout">
 
         <div class="content-column">
 
-          <div class="card card-large">
+          <section class="card card-large" id="about">
             <div class="card-icon-wrapper">
               <m3e-shape name="soft-burst" class="m3e-icon-bg"
                 style="--m3e-shape-container-color:var(--md-sys-color-primary);"></m3e-shape>
@@ -48,9 +56,9 @@ import { Icon } from 'astro-icon/components';
                 <span class="skill-chip">Git</span>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div class="card">
+          <section class="card" id="socials">
             <div class="card-icon-wrapper">
               <m3e-shape name="pill" class="m3e-icon-bg"
                 style="--m3e-shape-container-color:var(--md-sys-color-primary); transform:rotate(90deg);"></m3e-shape>
@@ -100,9 +108,9 @@ import { Icon } from 'astro-icon/components';
                 <Icon name="material-symbols:chevron-forward" class="list-arrow" />
               </a>
             </div>
-          </div>
+          </section>
 
-          <div class="card">
+          <section class="card" id="friend">
             <div class="card-icon-wrapper">
               <m3e-shape name="6-sided-cookie" class="m3e-icon-bg"
                 style="--m3e-shape-container-color:var(--md-sys-color-primary);"></m3e-shape>
@@ -120,9 +128,9 @@ import { Icon } from 'astro-icon/components';
                 <Icon name="material-symbols:chevron-forward" class="list-arrow" />
               </a>
             </div>
-          </div>
+          </section>
 
-          <div class="card card-image-bg" style="--card-bg-url: url('/assets/images/sonic-and-miku.webp');">
+          <section class="card card-image-bg" id="games" style="--card-bg-url: url('/assets/images/sonic-and-miku.webp');">
             <div class="card-icon-wrapper">
               <m3e-shape name="gem" class="m3e-icon-bg"
                 style="--m3e-shape-container-color:var(--md-sys-color-primary);"></m3e-shape>
@@ -149,13 +157,13 @@ import { Icon } from 'astro-icon/components';
               </a>
             </div>
 
-          </div>
+          </section>
 
         </div>
 
         <div class="content-column">
 
-          <div class="card">
+          <section class="card" id="notes">
             <div class="card-icon-wrapper icon-secondary">
               <m3e-shape name="burst" class="m3e-icon-bg"
                 style="--m3e-shape-container-color:var(--md-sys-color-secondary-container);"></m3e-shape>
@@ -170,9 +178,9 @@ import { Icon } from 'astro-icon/components';
                 open vault
               </a>
             </div>
-          </div>
+          </section>
 
-          <div class="card">
+          <section class="card" id="newspaper">
             <div class="card-icon-wrapper icon-secondary">
               <m3e-shape name="square" class="m3e-icon-bg"
                 style="--m3e-shape-container-color:var(--md-sys-color-secondary-container);"></m3e-shape>
@@ -194,12 +202,12 @@ import { Icon } from 'astro-icon/components';
               </p>
             </div>
             <img src="/assets/images/cunny.webp" class="card-image" alt="miau miau bunny" draggable="false" />
-          </div>
+          </section>
 
-          <div class="card">
+          <section class="card" id="art">
             <img src="/assets/gifs/papyrus-watering.webp" class="card-image gif" alt="papyrus watering"
               draggable="false" />
-          </div>
+          </section>
 
         </div>
 
