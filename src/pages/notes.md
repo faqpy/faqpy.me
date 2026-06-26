@@ -19,3 +19,5 @@ through heaven and hell, my refactoring spirit alone is the honored one
 - get actual materials for the plant
 - get skilled and unskilled workers for the construction (masonry, brickwork, foundation, etc.)
 - just kidding but there are some
+
+![fw](/favicon.png)
