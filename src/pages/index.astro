@@ -161,7 +161,7 @@ import { Icon } from 'astro-icon/components';
 
         <div class="content-column">
 
-          <section class="card" id="notes">
+          <section class="card card-image-bg" style="--card-bg-url: url('/assets/images/osaka.webp');" id="notes">
             <div class="card-icon-wrapper icon-secondary">
               <m3e-shape name="burst" class="m3e-icon-bg"
                 style="--m3e-shape-container-color:var(--md-sys-color-secondary-container);"></m3e-shape>
@@ -171,7 +171,7 @@ import { Icon } from 'astro-icon/components';
             <p class="text-muted text-small align-up">obsd-sync repo hasn't been initialized yet and probably will never
               be.</p>
             <div class="card-actions">
-              <a href="/notes" class="btn-primary">
+              <a href="/notes" class="btn-primary btn-primary-blur">
                 <Icon name="material-symbols:open-in-new" class="btn-icon" />
                 open vault
               </a>
