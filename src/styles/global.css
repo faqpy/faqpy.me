@@ -269,15 +269,6 @@ body {
     color: var(--md-sys-color-primary);
 }
 
-.list-avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-    background: var(--md-sys-color-surface-container-high);
-}
-
 .list-content {
     display: flex;
     flex-direction: column;
