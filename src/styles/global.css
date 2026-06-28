@@ -140,6 +140,10 @@ body {
     scroll-margin-top: 1.5rem;
 }
 
+#socials {
+    position: relative;
+}
+
 .card-jump-nav {
     display: none;
     flex-wrap: wrap;
@@ -451,6 +455,22 @@ body {
 }
 .card-image.gif {
     object-fit: contain;
+}
+
+.card-image.wobble {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 84px;
+    height: auto;
+    object-fit: contain;
+    max-height: none;
+    margin: 0;
+    z-index: 1;
+    pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
+    transform: rotate(8deg);
 }
 
 .card-image-bg {
