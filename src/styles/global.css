@@ -288,6 +288,15 @@ body {
     flex-shrink: 0;
 }
 
+.eexto {
+    width: 88px;
+    height: 31px;
+    transition: transform 0.2s ease;
+}
+.eexto:hover {
+    transform: translateY(-2px);
+}
+
 .card-actions {
     display: flex;
     margin-top: 4px;
