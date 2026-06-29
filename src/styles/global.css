@@ -38,7 +38,7 @@
     --card-radius: 28px;
     --list-radius: 16px;
     --link-radius: 4px;
-    --content-max: min(1200px, calc(100vw - 20px));
+    --content-max: min(1200px, calc(100vw - 48px));
     --layout-gap: 24px;
 }
 
@@ -120,7 +120,7 @@ body {
     gap: var(--layout-gap);
     max-width: var(--content-max);
     margin: 0 auto;
-    padding: 0 10px 48px;
+    padding: 0 var(--layout-gap) 48px;
 }
 
 .content-column {
@@ -151,7 +151,7 @@ body {
     gap: 10px;
     max-width: var(--content-max);
     margin: 0 auto;
-    padding: 0 10px 16px;
+    padding: 0 var(--layout-gap);
 }
 
 .card-nav a {
@@ -434,7 +434,7 @@ body {
 .footer-container {
     width: 100%;
     max-width: var(--content-max);
-    padding: 0 10px;
+    padding: 0 var(--layout-gap);
     display: flex;
 }
 
@@ -524,7 +524,7 @@ body {
 @media (max-width: 600px) {
 
     .card {
-        padding: 20px 18px;
+        padding: 20px;
     }
 
     .card-heading {
