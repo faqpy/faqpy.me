@@ -1,3 +1,7 @@
+---
+import EnterTooltip from "./EnterTooltip.astro"
+---
+
 <div id="enter-screen" class="enter-screen">
     <div class="enter-bg">
         <video autoplay loop muted playsinline class="enter-bg-video">
@@ -8,6 +12,7 @@
         <img src="/assets/images/ralsei-heart.webp" alt="ralsei heart" class="enter-image" draggable="false" />
         <h1 class="enter-text">✧ click to enter ✧</h1>
     </div>
+    <EnterTooltip />
 </div>
 <style>
     .enter-screen {
@@ -60,7 +65,7 @@
     .enter-image {
         width: 80px;
         image-rendering: pixelated;
-        animation: pulse 1.5s infinite;
+        animation: boop 1.5s infinite;
     }
 
     .enter-text {
@@ -72,24 +77,19 @@
     }
 
     @keyframes float {
-
         0%,
         100% {
             transform: translateY(0px) rotate(1deg);
         }
-
         50% {
             transform: translateY(-10px) rotate(-1deg);
         }
     }
-
-    @keyframes pulse {
-
+    @keyframes boop {
         0%,
         100% {
             transform: scale(1) rotate(-4deg);
         }
-
         50% {
             transform: scale(1.1) rotate(4deg);
         }

@@ -1,0 +1,64 @@
+---
+const tips = [
+    "contains background music",
+    "headphones are recommended",
+    "read if cute",
+];
+---
+
+<div class="tooltip-container">
+    {tips.map((tip, index) => (
+        <span class={`tooltip-msg ${index === 0 ? 'active' : ''}`}>{tip}</span>
+    ))}
+</div>
+<style>
+    .tooltip-container {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        place-items: center;
+        animation: tooltipFloat 4s ease-in-out infinite;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .tooltip-msg {
+        grid-area: 1 / 1;
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        color: var(--md-sys-color-on-surface-variant);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        pointer-events: none;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .tooltip-msg.active {
+        opacity: 0.6;
+    }
+
+    @keyframes tooltipFloat {
+        0%, 100% {
+            transform: translateX(-50%) translateY(0px) rotate(-1deg);
+        }
+        50% {
+            transform: translateX(-50%) translateY(-5px) rotate(1deg);
+        }
+    }
+</style>
+<script>
+    document.querySelectorAll('.tooltip-container').forEach(container => {
+        const tips = container.children;
+        if (tips.length < 2) return;
+
+        let currentIndex = 0;
+        setInterval(() => {
+            tips[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % tips.length;
+            tips[currentIndex].classList.add('active');
+        }, 3000);
+    });
+</script>
