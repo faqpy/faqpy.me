@@ -240,17 +240,23 @@ import { Icon } from 'astro-icon/components';
         <footer class="site-footer">
             <div class="footer-container">
                 <div class="footer-card">
-                    <button class="fab footer-fab mail" aria-label="contact me" title="mail me!"
-                        onclick="window.location.href='mailto:hi@faqpy.me'">
-                        <Icon name="simple-icons:gmail" />
-                    </button>
-                    <span class="footer-text"><a href="/license" class="btn-footer">license</a></span>
+                    <div class="footer-content">
+                        <div class="footer-links">
+                            <a href="mailto:hi@faqpy.me" aria-label="contact me" title="mail me!" class="footer-link">mail</a>
+                            <span class="footer-separator">✧</span>
+                            <a href="/license" class="footer-link">license</a>
+                            <span class="footer-separator">✧</span>
+                            <a href="https://github.com/faqpy/faqpy.me" target="_blank" rel="noreferrer noopener" class="footer-link">source</a>
+                            <span class="footer-separator">✧</span>
+                            <button id="music-toggle" class="footer-link btn-link" aria-label="toggle music" title="Toby Fox - It's Raining Somewhere Else (UNDERTALE)">
+                                music <Icon name="material-symbols:music-note" id="icon-play" style="font-size: 1em; vertical-align: middle;" /><Icon name="material-symbols:music-off" id="icon-pause" class="is-hidden" style="font-size: 1em; vertical-align: middle;" />
+                            </button>
+                        </div>
+                        <div class="footer-copyright">
+                            &copy; 2026 faqpy. made with vsc.
+                        </div>
+                    </div>
                     <FooterBoombox />
-                    <button class="fab footer-fab" id="music-toggle" aria-label="toggle music"
-                        title="Toby Fox - It's Raining Somewhere Else (UNDERTALE)">
-                        <Icon name="material-symbols:music-note" id="icon-play" />
-                        <Icon name="material-symbols:music-off" id="icon-pause" class="is-hidden" />
-                    </button>
                 </div>
             </div>
         </footer>
