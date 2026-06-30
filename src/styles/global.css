@@ -509,6 +509,10 @@ body {
     align-items: center;
 }
 
+.news-marquee marquee {
+    width: 100%;
+}
+
 @media (max-width: 1024px) {
     .hero-banner {
         height: calc(100svh - 9em - 40px);
