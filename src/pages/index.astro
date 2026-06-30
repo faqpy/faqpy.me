@@ -39,8 +39,8 @@ import { Icon } from 'astro-icon/components';
                             <Icon name="material-symbols:waving-hand" class="card-icon-foreground" />
                         </div>
                         <div class="profile-details about-card">
-                            <h1 class="profile-title"><span class="highlight-primary">faqpy</span> です!</h1>
-                            <p class="text-muted text-small align-up">(a.k.a witchie)</p>
+                            <h1 class="profile-title"><span>faqpy</span> です!</h1>
+                            <p class="card-subtitle">(a.k.a witchie)</p>
                             <ul class="profile-description">
                                 <li>heya, i'm faqpy
                                     <CustomEmoji src="/assets/emojis/miauWhat.webp" name="miau" />
@@ -72,7 +72,7 @@ import { Icon } from 'astro-icon/components';
                                 </div>
                                 <div class="list-content">
                                     <span class="list-title">github</span>
-                                    <span class="text-muted text-small">i cnat cod</span>
+                                    <span class="list-desc">i cnat cod</span>
                                 </div>
                                 <Icon name="material-symbols:chevron-forward" class="list-arrow" />
                             </a>
@@ -83,7 +83,7 @@ import { Icon } from 'astro-icon/components';
                                 </div>
                                 <div class="list-content">
                                     <span class="list-title">discord</span>
-                                    <span class="text-muted text-small">for quick responses</span>
+                                    <span class="list-desc">for quick responses</span>
                                 </div>
                                 <Icon name="material-symbols:chevron-forward" class="list-arrow" />
                             </a>
@@ -93,7 +93,7 @@ import { Icon } from 'astro-icon/components';
                                 </div>
                                 <div class="list-content">
                                     <span class="list-title">twitter</span>
-                                    <span class="text-muted text-small">dead but i like my tl</span>
+                                    <span class="list-desc">dead but i like my tl</span>
                                 </div>
                                 <Icon name="material-symbols:chevron-forward" class="list-arrow" />
                             </a>
@@ -107,18 +107,18 @@ import { Icon } from 'astro-icon/components';
                             <Icon name="material-symbols:group" class="card-icon-foreground" />
                         </div>
                         <h2 class="card-heading">friends</h2>
-                        <p class="text-muted text-small align-up">some cool people :3</p>
+                        <p class="card-subtitle">some cool people :3</p>
                         <div class="card-article">
-                            <a href="https://twixxt.vercel.app/" title="@twixxty on github" class="eexto-link"
+                            <a href="https://twixxt.vercel.app/" title="@twixxty on github"
                                 target="_blank" rel="noreferrer noopener">
                                 <img src="/assets/buttons/ralsei-smoking.gif" alt="twixxty" draggable="false"
                                     class="eexto" />
                             </a>
                             <a href="https://www.nicovideo.jp/watch/sm11509720" title="Nyanyanyanyanyanyanya!"
-                                class="eexto-link" target="_blank" rel="noreferrer noopener">
+                                target="_blank" rel="noreferrer noopener">
                                 <img src="/assets/buttons/miau.png" alt="miau" draggable="false" class="eexto" />
                             </a>
-                            <a href="/player" title="what am i even doing" class="eexto-link" data-astro-prefetch="hover">
+                            <a href="/player" title="what am i even doing" data-astro-prefetch="hover">
                                 <img src="/assets/buttons/player-eexto.gif" alt="cute" draggable="false"
                                     class="eexto" />
                             </a>
@@ -135,7 +135,7 @@ import { Icon } from 'astro-icon/components';
                         <h2 class="card-heading">i play games
                             <CustomEmoji src="/assets/emojis/susie-eager.webp" name="susie-eager" />
                         </h2>
-                        <p class="text-muted text-small align-up">although i rarely play any games now, mmmgemes</p>
+                        <p class="card-subtitle">although i rarely play any games now, mmmgemes</p>
                         <div class="card-actions inline-fabs">
                             <a href="https://steamcommunity.com/id/schizofuck" target="_blank" rel="noreferrer noopener"
                                 class="fab fab-inline" aria-label="Steam">
@@ -170,7 +170,7 @@ import { Icon } from 'astro-icon/components';
                             <Icon name="material-symbols:edit-note" class="card-icon-foreground" />
                         </div>
                         <h2 class="card-heading">notes</h2>
-                        <p class="text-muted text-small align-up">obsd-sync repo hasn't been initialized yet and
+                        <p class="card-subtitle">obsd-sync repo hasn't been initialized yet and
                             probably will never
                             be.</p>
                         <div class="card-actions">
@@ -189,7 +189,7 @@ import { Icon } from 'astro-icon/components';
                             <Icon name="material-symbols:newspaper" class="card-icon-foreground" />
                         </div>
                         <h2 class="card-heading">newspaper</h2>
-                        <p class="text-muted text-small align-up">Tuesday, June 23rd, 2026</p>
+                        <p class="card-subtitle">Tuesday, June 23rd, 2026</p>
                         <div class="card-article">
                             <p>
                                 studying japanese through anki was really fun but it gets quite boring really quickly,
@@ -201,8 +201,7 @@ import { Icon } from 'astro-icon/components';
                                 i can keep up with it again.
                                 <CustomEmoji src="/assets/emojis/tenna-dance.webp" name="tenna-dance" />
                             </p>
-                            <img src="/assets/gifs/susie-eat-melon.webp" alt="susie eating melon" class="card-image gif"
-                                style="width: 80px;" draggable="false" />
+                            <img src="/assets/gifs/susie-eat-melon.webp" alt="susie eating melon" class="card-image" style="object-fit: contain; width: 80px;" draggable="false" />
                             <p>
                                 if you're reading this and have any suggestions on how to make studying japanese more
                                 fun and
@@ -221,7 +220,7 @@ import { Icon } from 'astro-icon/components';
                     </section>
 
                     <section class="card" id="art">
-                        <img src="/assets/gifs/papyrus-watering.webp" class="card-image gif" alt="papyrus watering"
+                        <img src="/assets/gifs/papyrus-watering.webp" class="card-image" style="object-fit: contain;" alt="papyrus watering"
                             draggable="false" />
                     </section>
 
@@ -237,12 +236,12 @@ import { Icon } from 'astro-icon/components';
                     onclick="window.location.href='mailto:hi@faqpy.me'">
                     <Icon name="simple-icons:gmail" />
                 </button>
-                <span class="text-muted text-small"><a href="/license" class="btn-footer">license</a></span>
+                <span class="footer-text"><a href="/license" class="btn-footer">license</a></span>
                 <FooterBoombox />
                 <button class="fab footer-fab" id="music-toggle" aria-label="toggle music"
                     title="Toby Fox - It's Raining Somewhere Else (UNDERTALE)">
                     <Icon name="material-symbols:music-note" id="icon-play" />
-                    <Icon name="material-symbols:music-off" id="icon-pause" class="icon-hidden" />
+                    <Icon name="material-symbols:music-off" id="icon-pause" class="is-hidden" />
                 </button>
             </div>
         </div>

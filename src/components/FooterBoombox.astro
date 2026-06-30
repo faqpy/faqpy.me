@@ -12,12 +12,12 @@
         musicToggle.addEventListener("click", () => {
             if (boombox.paused) {
                 boombox.play();
-                playIcon.classList.remove("icon-hidden");
-                pauseIcon.classList.add("icon-hidden");
+                playIcon.classList.remove("is-hidden");
+                pauseIcon.classList.add("is-hidden");
             } else {
                 boombox.pause();
-                playIcon.classList.add("icon-hidden");
-                pauseIcon.classList.remove("icon-hidden");
+                playIcon.classList.add("is-hidden");
+                pauseIcon.classList.remove("is-hidden");
             }
         });
     }
