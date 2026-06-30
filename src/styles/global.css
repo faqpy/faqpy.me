@@ -34,6 +34,7 @@
     --md-sys-color-surface-container: rgb(38 30 24);
     --md-sys-color-surface-container-high: rgb(49 40 34);
     --md-sys-color-outline: rgb(159 141 131);
+    --md-sys-color-shadow: 0 0 16px color-mix(in srgb, var(--md-sys-color-primary) 50%, transparent);
 
     --card-radius: 28px;
     --list-radius: 16px;
@@ -207,6 +208,7 @@ body {
     font-size: 1.5rem;
     font-weight: 500;
     margin: 0;
+    text-shadow: var(--md-sys-color-shadow);
 }
 
 
@@ -220,6 +222,7 @@ body {
 .profile-title {
     font-family: var(--font-heading);
     font-size: clamp(1.8rem, 4vw, 2.2rem);
+    text-shadow: var(--md-sys-color-shadow);
     font-weight: 500;
     margin: 0;
 }
