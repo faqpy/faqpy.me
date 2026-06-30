@@ -7,17 +7,31 @@
     const pauseIcon = document.querySelector<HTMLElement>("#icon-pause");
 
     if (boombox && musicToggle && playIcon && pauseIcon) {
-        boombox.volume=0.4;
+        boombox.volume = 0.3;
+
+        const updateIcons = () => {
+            if (boombox.paused) {
+                playIcon.classList.add("is-hidden");
+                pauseIcon.classList.remove("is-hidden");
+            } else {
+                playIcon.classList.remove("is-hidden");
+                pauseIcon.classList.add("is-hidden");
+            }
+        };
 
         musicToggle.addEventListener("click", () => {
             if (boombox.paused) {
-                boombox.play();
-                playIcon.classList.remove("is-hidden");
-                pauseIcon.classList.add("is-hidden");
+                boombox.play().catch(() => {});
             } else {
                 boombox.pause();
-                playIcon.classList.add("is-hidden");
-                pauseIcon.classList.remove("is-hidden");
+            }
+            updateIcons();
+        });
+
+        document.addEventListener('enter-site', () => {
+            if (boombox.paused) {
+                boombox.play().catch(() => {});
+                updateIcons();
             }
         });
     }

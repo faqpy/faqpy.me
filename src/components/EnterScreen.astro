@@ -1,0 +1,125 @@
+<div id="enter-screen" class="enter-screen">
+    <div class="enter-bg">
+        <video autoplay loop muted playsinline class="enter-bg-video">
+            <source src="/assets/videos/deltarune-rainy.webm" type="video/webm" />
+        </video>
+    </div>
+    <div class="enter-content">
+        <img src="/assets/images/ralsei-heart.webp" alt="ralsei heart" class="enter-image" draggable="false" />
+        <h1 class="enter-text">✧ click to enter ✧</h1>
+    </div>
+</div>
+<style>
+    .enter-screen {
+        position: fixed;
+        inset: 0;
+        background: var(--md-sys-color-surface-container-lowest);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: .5s ease-out;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .enter-screen.hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .enter-bg {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
+
+    .enter-bg::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(rgba(25, 18, 13, 0.75), rgba(25, 18, 13, 0.75));
+    }
+
+    .enter-bg-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .enter-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .enter-image {
+        width: 80px;
+        image-rendering: pixelated;
+        animation: pulse 1.5s infinite;
+    }
+
+    .enter-text {
+        color: var(--md-sys-color-primary);
+        font-size: 1.2rem;
+        letter-spacing: .15em;
+        margin: 0;
+        text-shadow: var(--md-sys-color-shadow);
+    }
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0px) rotate(1deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotate(-1deg);
+        }
+    }
+
+    @keyframes pulse {
+
+        0%,
+        100% {
+            transform: scale(1) rotate(-4deg);
+        }
+
+        50% {
+            transform: scale(1.1) rotate(4deg);
+        }
+    }
+</style>
+
+<script>
+    const enterScreen = document.getElementById('enter-screen');
+    const mainWrapper = document.getElementById('main-wrapper');
+
+    if (enterScreen) {
+        document.body.style.overflow = 'hidden';
+
+        enterScreen.addEventListener('click', () => {
+            enterScreen.classList.add('hidden');
+
+            setTimeout(() => {
+                enterScreen.remove();
+            }, 500);
+
+            document.body.style.overflow = '';
+
+            if (mainWrapper) {
+                mainWrapper.style.display = 'block';
+                setTimeout(() => {
+                    mainWrapper.style.opacity = '1';
+                }, 10);
+            }
+
+            document.dispatchEvent(new CustomEvent('enter-site'));
+        });
+    }
+</script>
