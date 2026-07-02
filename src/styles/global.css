@@ -640,6 +640,6 @@ body {
     }
 
     .card-article.eexto-grid {
-        justify-content: space-between;
+        justify-content: center;
     }
 }
