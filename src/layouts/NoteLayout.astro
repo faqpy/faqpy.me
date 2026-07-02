@@ -48,4 +48,11 @@ const { frontmatter } = Astro.props;
 .markdown-prose a::selection {
     color: var(--md-sys-color-error-container);
 }
+.markdown-prose img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    display: block;
+    border-radius: var(--list-radius);
+}
 </style>
