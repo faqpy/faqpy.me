@@ -11,7 +11,11 @@ title: 24/06/2026
 
 ~through heaven and hell, my refactoring spirit alone is the honored one~ im stoopid
 
+![ralsei](/assets/images/ralsei-lightener.webp)
+
 ### judge the [code](https://github.com/faqpy/faqpy.me), not the [coder](https://duckduckgo.com/?q=mango&ia=images&iax=images) ;p
+
+![susie](/assets/images/susies-idea.webp)
 
 ## future goals
 
@@ -20,7 +24,7 @@ title: 24/06/2026
 - get skilled and unskilled workers for the construction (masonry, brickwork, foundation, etc.)
 - just kidding but there are some
 
-![fw](/favicon.png)
+![kris](/assets/images/kris-bloxxy.webp)
 
 ## ???
 
