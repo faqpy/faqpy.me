@@ -598,6 +598,20 @@ body {
     margin: 0;
 }
 
+.card-divider {
+    border: none;
+    border-top: 1px solid var(--md-sys-color-surface-variant);
+    margin: 0;
+    width: 100%;
+}
+
+.faqpy-button {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+}
+
 @media (max-width: 1024px) {
     .hero-banner {
         height: calc(100svh - 9em - 40px);
@@ -623,5 +637,9 @@ body {
 
     .card-heading {
         font-size: 1.25rem;
+    }
+
+    .card-article.eexto-grid {
+        justify-content: space-between;
     }
 }

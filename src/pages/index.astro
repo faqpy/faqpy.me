@@ -110,7 +110,7 @@ import { Icon } from 'astro-icon/components';
                             <p class="card-subtitle">some cool people :3</p>
                             <div class="card-article eexto-grid">
                                 <a href="https://twixxt.vercel.app/" title="@twixxty on github" target="_blank" rel="noreferrer noopener">
-                                    <img src="/assets/buttons/ralsei-smoking.gif" alt="twixxty" draggable="false" class="eexto" />
+                                    <img src="/assets/buttons/twixxty.gif" alt="twixxty" draggable="false" class="eexto" />
                                 </a>
                                 <a href="https://www.nicovideo.jp/watch/sm11509720" title="Nyanyanyanyanyanyanya!" target="_blank" rel="noreferrer noopener">
                                     <img src="/assets/buttons/miau.png" alt="miau" draggable="false" class="eexto" />
@@ -118,6 +118,13 @@ import { Icon } from 'astro-icon/components';
                                 <a href="/player" title="what am i even doing" data-astro-prefetch="hover">
                                     <img src="/assets/buttons/player-eexto.gif" alt="cute" draggable="false" class="eexto" />
                                 </a>
+                            </div>
+                            <hr class="card-divider">
+                            <div class="faqpy-button">
+                                <button class="btn-link" id="copy-btn" title="[TEMPORARY]" aria-label="copy embed code">
+                                    <img src="/button.gif" alt="faqpy button" draggable="false" class="eexto" />
+                                </button>
+                                <span class="list-desc" id="copy-label" style="text-align:center;">click to copy</span>
                             </div>
                         </section>
 
@@ -222,6 +229,21 @@ import { Icon } from 'astro-icon/components';
     </div>
     <script>
         import '@m3e/web/shape';
+    </script>
+    <script>
+        const copyBtn = document.querySelector('#copy-btn');
+        const copyLabel = document.querySelector('#copy-label');
+        const embedCode = '<a href="https://faqpy.me" target="_blank" rel="noreferrer noopener"><img src="https://faqpy.me/button.gif" alt="faqpy.me" width="88" height="31" /></a>';
+        if (copyBtn) {
+            copyBtn.addEventListener('click', () => {
+                navigator.clipboard.writeText(embedCode).then(() => {
+                    if (copyLabel) copyLabel.textContent = 'copied!';
+                    setTimeout(() => {
+                        if (copyLabel) copyLabel.textContent = 'click to copy';
+                    }, 2000);
+                });
+            });
+        }
     </script>
 </body>
 
