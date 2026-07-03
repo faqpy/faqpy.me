@@ -12,40 +12,24 @@ import { Icon } from 'astro-icon/components';
 
 <body>
     <main class="layout-main">
-        <section class="content-section">
-            <div class="content-layout">
-                <div class="content-column">
-                    <div class="card">
-                        <div class="card-icon-wrapper">
-                            <m3e-shape name="soft-burst" class="m3e-icon-bg" style="--m3e-shape-container-color:var(--md-sys-color-primary);"></m3e-shape>
-                            <Icon name="material-symbols:cloud-off" class="card-icon-foreground" />
-                        </div>
-                        <h1 class="profile-title">error 404</h1>
-                        <p class="text-muted text-small align-up">page not found</p>
-                        <div class="card-article">
-                            <p>please check the url and try again. if you think this is a mistake, please contact me!</p>
-                        </div>
-                        <div class="card-actions">
-                            <a href="mailto:hi@faqpy.me" class="btn-primary">
-                                <Icon name="material-symbols:open-in-new" class="btn-icon" />
-                                click here to mail me
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <div class="card centered-card">
+            <div class="card-icon-wrapper">
+                <m3e-shape name="soft-burst" class="m3e-icon-bg" style="--m3e-shape-container-color:var(--md-sys-color-primary);"></m3e-shape>
+                <Icon name="material-symbols:cloud-off" class="card-icon-foreground" />
             </div>
-        </section>
+            <h1 class="profile-title">error 404</h1>
+            <p class="card-subtitle">page not found</p>
+            <div class="card-article">
+                <p>please check the url and try again. if you think this is a mistake, please contact me!</p>
+            </div>
+            <div class="card-actions">
+                <a href="mailto:hi@faqpy.me" class="btn-primary">
+                    <Icon name="material-symbols:open-in-new" class="btn-icon" />
+                    click here to mail me
+                </a>
+            </div>
+        </div>
     </main>
-    <style>
-        .content-section {
-            padding-top: 48px;
-        }
-        .content-column {
-            max-width: 800px;
-            margin: 0 auto;
-            width: 100%;
-        }
-    </style>
     <script>
         import '@m3e/web/shape';
     </script>

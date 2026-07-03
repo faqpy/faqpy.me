@@ -12,37 +12,20 @@ import { Icon } from 'astro-icon/components';
 
 <body>
     <main class="layout-main">
-        <section class="content-section">
-            <div class="content-layout">
-                <div class="content-column">
-                    <div class="card">
-                        <div class="card-icon-wrapper">
-                            <m3e-shape name="soft-burst" class="m3e-icon-bg" style="--m3e-shape-container-color:var(--md-sys-color-primary);"></m3e-shape>
-                            <Icon name="material-symbols:license" class="card-icon-foreground" />
-                        </div>
-                        <h1 class="profile-title">copyright & usage</h1>
-                        <div class="card-article">
-                            <ul class="profile-description">
-                                <li>visuals: <br>all character sprites, gifs, and related visual assets belong to their respective creators: undertale & deltarune © toby fox; sonic the hedgehog © sega corporation; hatsune miku © crypton future media, inc. this is a personal, non-commercial fan site, and no copyright infringement is intended.</li>
-                                <li>audio: <br>the track playing in the website is <span><a href="https://www.youtube.com/watch?v=aSc7Yuwn1Ao" class="btn-footer" target="_blank" rel="noreferrer noopener">"The place where it rained"</a></span> from the game <span><a href="https://deltarune.com/" class="btn-footer" target="_blank" rel="noreferrer noopener">"DELTARUNE"</a></span> composed by toby fox (administered by <span><a href="https://www.materiamusic.com/" class="btn-footer" target="_blank" rel="noreferrer noopener">materia music</a></span>).</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="card centered-card">
+            <div class="card-icon-wrapper">
+                <m3e-shape name="soft-burst" class="m3e-icon-bg" style="--m3e-shape-container-color:var(--md-sys-color-primary);"></m3e-shape>
+                <Icon name="material-symbols:license" class="card-icon-foreground" />
             </div>
-        </section>
+            <h1 class="profile-title">copyright & usage</h1>
+            <div class="card-article">
+                <ul class="profile-description">
+                    <li>visuals: <br>all character sprites, gifs, and related visual assets belong to their respective creators: undertale & deltarune © toby fox; sonic the hedgehog © sega corporation; hatsune miku © crypton future media, inc. this is a personal, non-commercial fan site, and no copyright infringement is intended.</li>
+                    <li>audio: <br>the track playing in the website is <span><a href="https://www.youtube.com/watch?v=aSc7Yuwn1Ao" class="btn-footer" target="_blank" rel="noreferrer noopener">"The place where it rained"</a></span> from the game <span><a href="https://deltarune.com/" class="btn-footer" target="_blank" rel="noreferrer noopener">"DELTARUNE"</a></span> composed by toby fox (administered by <span><a href="https://www.materiamusic.com/" class="btn-footer" target="_blank" rel="noreferrer noopener">materia music</a></span>).</li>
+                </ul>
+            </div>
+        </div>
     </main>
-    <style>
-        .content-section {
-            padding-top: 48px;
-        }
-
-        .content-column {
-            max-width: 800px;
-            margin: 0 auto;
-            width: 100%;
-        }
-    </style>
     <script>
         import '@m3e/web/shape';
     </script>

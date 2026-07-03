@@ -40,6 +40,7 @@
     --list-radius: 16px;
     --link-radius: 4px;
     --content-max: min(1200px, calc(100vw - 48px));
+    --content-max-centered: min(800px, calc(100vw - 48px));
     --layout-gap: 24px;
 }
 
@@ -158,6 +159,13 @@ body {
     flex-direction: column;
     gap: 16px;
     scroll-margin-top: 1.5rem;
+}
+
+.centered-card {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: var(--content-max-centered);
+    margin-top: 48px;
 }
 
 #about,
