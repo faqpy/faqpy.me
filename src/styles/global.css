@@ -400,7 +400,6 @@ body {
     background: transparent;
     border: 1px solid color-mix(in srgb, var(--md-sys-color-outline) 35%, transparent);
     backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
 }
 
 .fab-inline:hover,
@@ -408,7 +407,6 @@ body {
     background: color-mix(in srgb, var(--md-sys-color-surface-container-low) 50%, transparent);
     border-color: color-mix(in srgb, var(--md-sys-color-outline) 58%, transparent);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 .btn-footer {
