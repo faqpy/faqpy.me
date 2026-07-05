@@ -8,10 +8,10 @@ type Props = {
   image?: string;
 };
 const {
-  title = 'faqpy',
+  title = "faqpy's basement",
   description = 'heya im faqpy, a self-taught web dev and programmer. check out my personal portfolio and projects on github. feel free to reach out to me on discord or mail me!',
   type = 'website',
-  image = 'https://api.lanyard.rest/600698629501616138.webp',
+  image = 'https://api.lanyard.rest/600698629501616138.png',
 } = Astro.props satisfies Props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || Astro.url);
@@ -19,7 +19,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || Astro.url);
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="manifest" href="/manifest.json" />
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="generator" content={Astro.generator} />
 
 <link rel="canonical" href={canonicalURL} />
@@ -34,7 +37,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || Astro.url);
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
 
-<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:card" content="summary" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
