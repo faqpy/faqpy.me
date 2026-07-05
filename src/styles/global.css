@@ -54,7 +54,7 @@
 }
 ::-webkit-scrollbar-thumb {
     background: var(--md-sys-color-surface-variant);
-    border-radius: 999px;
+    border-radius: 50px;
     transition: background 0.2s ease;
 }
 ::-webkit-scrollbar-thumb:hover {
