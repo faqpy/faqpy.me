@@ -12,8 +12,8 @@ importers:
         specifier: ^1.2.82
         version: 1.2.82
       '@iconify-json/simple-icons':
-        specifier: ^1.2.88
-        version: 1.2.88
+        specifier: ^1.2.89
+        version: 1.2.89
       '@m3e/web':
         specifier: ^2.5.14
         version: 2.5.14(@floating-ui/utils@0.2.11)(lit@3.3.3)(tslib@2.8.1)
@@ -369,8 +369,8 @@ packages:
   '@iconify-json/material-symbols@1.2.82':
     resolution: {integrity: sha512-qjx3kPmUwBL4HdSAwP5iWgeTVbIelU713OVrC2fKmIloFgZtncIKkFzCTZ9oX99X5JPX9PnBDcCmOTm+RqtbGg==}
 
-  '@iconify-json/simple-icons@1.2.88':
-    resolution: {integrity: sha512-+cvi1qCuvReL29ehi6t62L4fb7GDXe+UlGHFcsJcV7I2l9wtqn9XE2IBKcDr3CI5iGUGS5ISnXv699pSGpyx1Q==}
+  '@iconify-json/simple-icons@1.2.89':
+    resolution: {integrity: sha512-hRaCY5s2G5oWAIhc4LCGYn6g6RrwLL4zhoLOT+KUO3joVCxVlZKA+839bv/47Nbe9/ZD4UA6dznZ4XPYcI53wA==}
 
   '@iconify/tools@4.2.0':
     resolution: {integrity: sha512-WRxPva/ipxYkqZd1+CkEAQmd86dQmrwH0vwK89gmp2Kh2WyyVw57XbPng0NehP3x4V1LzLsXUneP1uMfTMZmUA==}
@@ -1921,7 +1921,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/simple-icons@1.2.88':
+  '@iconify-json/simple-icons@1.2.89':
     dependencies:
       '@iconify/types': 2.0.0
 
