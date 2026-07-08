@@ -410,7 +410,6 @@ body {
     gap: 8px;
     text-decoration: none;
     width: fit-content;
-    transition: border-radius 0.2s, background 0.2s ease;
 }
 
 .btn-primary:hover {
@@ -432,6 +431,7 @@ body {
     background: transparent;
     border: 1px solid color-mix(in srgb, var(--md-sys-color-outline) 35%, transparent);
     backdrop-filter: blur(6px);
+    transition: background 0.2s ease, border-color 0.2s ease, backdrop-filter 0.2s ease, border-radius 0.2s ease;
 }
 
 .fab-inline:hover,
