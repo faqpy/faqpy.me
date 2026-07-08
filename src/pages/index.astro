@@ -35,7 +35,7 @@ import { Icon } from 'astro-icon/components';
 
                     <div class="content-column">
 
-                        <section class="card" id="about">
+                        <section class="card card-image-bg" id="games" style="--card-bg-url: url('/assets/images/dr-c5-sunset.webp');" id="about">
                             <div class="card-icon-wrapper">
                                 <m3e-shape name="soft-burst" class="m3e-icon-bg" style="--m3e-shape-container-color:var(--md-sys-color-primary);"></m3e-shape>
                                 <Icon name="material-symbols:waving-hand" class="card-icon-foreground" />
@@ -163,11 +163,14 @@ import { Icon } from 'astro-icon/components';
                                 <m3e-shape name="burst" class="m3e-icon-bg" style="--m3e-shape-container-color:var(--md-sys-color-secondary-container);"></m3e-shape>
                                 <Icon name="material-symbols:edit-note" class="card-icon-foreground" />
                             </div>
-                            <h2 class="card-heading">notes</h2>
+                            <h2 class="card-heading">notebook</h2>
                             <p class="card-subtitle">notes to myself which i never read in the first place ;p</p>
                             <div class="card-actions card-buttons">
+                                <a href="/player" class="btn-primary btn-primary-blur" style="color: var(--md-sys-color-primary);">
+                                    chill out <Icon name="material-symbols:play-circle" class="btn-icon" />
+                                </a>
                                 <a href="/notes" class="btn-primary btn-primary-blur" style="color: var(--md-sys-color-primary);">
-                                    open vault <Icon name="material-symbols:open-in-new" class="btn-icon" />
+                                    open notes <Icon name="material-symbols:open-in-new" class="btn-icon" />
                                 </a>
                             </div>
                         </section>

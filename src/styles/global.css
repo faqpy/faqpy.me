@@ -613,8 +613,9 @@ body {
 }
 
 .statuscafe {
-    background: var(--md-sys-color-surface-container-low);
-    border: 1px solid var(--md-sys-color-outline-variant);
+    background: color-mix(in srgb, var(--md-sys-color-surface-container-low) 50%, transparent);
+    backdrop-filter: blur(10px);
+    border: 1px solid color-mix(in srgb, var(--md-sys-color-outline) 35%, transparent);
     border-radius: var(--list-radius);
     padding: 14px 16px;
     margin-top: 12px;
