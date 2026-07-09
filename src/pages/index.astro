@@ -54,7 +54,7 @@ import { Icon } from 'astro-icon/components';
             </section>
 
             <section class="content-section">
-                <nav class="card-nav" aria-label="Jump to site sections">
+                <nav class="card-nav" aria-label="jump to site sections">
                     <a href="#about">about</a>
                     <a href="#friends">friends</a>
                     <a href="#games">mmmgemes</a>
@@ -95,19 +95,19 @@ import { Icon } from 'astro-icon/components';
                             <h2 class="card-heading">friends</h2>
                             <p class="card-subtitle">some cool people :3</p>
                             <div class="card-article eexto-grid">
-                                <a href="https://twixxt.vercel.app/" title="@twixxty on github" target="_blank" rel="noreferrer noopener">
+                                <a href="https://twixxt.vercel.app/" target="_blank" rel="noreferrer noopener">
                                     <img src="/assets/buttons/twixxty.gif" alt="twixxty" draggable="false" class="eexto" />
                                 </a>
-                                <a href="https://www.nicovideo.jp/watch/sm11509720" title="Nyanyanyanyanyanyanya!" target="_blank" rel="noreferrer noopener">
+                                <a href="https://www.nicovideo.jp/watch/sm11509720" target="_blank" rel="noreferrer noopener">
                                     <img src="/assets/buttons/miau.png" alt="miau" draggable="false" class="eexto" />
                                 </a>
-                                <a href="/player" title="what am i even doing" data-astro-prefetch="hover">
+                                <a href="/player">
                                     <img src="/assets/buttons/player-eexto.gif" alt="cute" draggable="false" class="eexto" />
                                 </a>
                             </div>
                             <hr class="card-divider">
                             <div class="faqpy-button">
-                                <button class="btn-link" id="copy-btn" title="faqpy" aria-label="copy embed code">
+                                <button class="btn-link" id="copy-btn" aria-label="copy embed code">
                                     <img src="/button.png" alt="faqpy button" draggable="false" class="eexto" />
                                 </button>
                                 <span class="list-desc" id="copy-label" style="text-align:center;">click to copy</span>
@@ -121,20 +121,20 @@ import { Icon } from 'astro-icon/components';
                             </div>
                             <h2 class="card-heading">i play games <CustomEmoji src="/assets/emojis/susie-eager.webp" name="susie-eager" /></h2>
                             <p class="card-subtitle">although i rarely play any games now, mmmgemes</p>
-                            <div class="card-actions inline-fabs">
-                                <a href="https://steamcommunity.com/id/schizofuck" target="_blank" rel="noreferrer noopener" class="fab fab-inline" aria-label="Steam">
+                            <div class="profile-socials" style="justify-content: flex-start; margin-top: 4px;">
+                                <a href="https://steamcommunity.com/id/schizofuck" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="steam">
                                     <Icon name="simple-icons:steam" />
                                 </a>
-                                <a href="https://www.roblox.com/users/802402672/profile" target="_blank" rel="noreferrer noopener" class="fab fab-inline" aria-label="Roblox">
+                                <a href="https://www.roblox.com/users/802402672/profile" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="roblox">
                                     <Icon name="simple-icons:roblox" />
                                 </a>
-                                <a href="https://namemc.com/profile/faqpy.1" target="_blank" rel="noreferrer noopener" class="fab fab-inline" aria-label="Minecraft">
-                                    <Icon name="simple-icons:namemc" />
+                                <a href="https://namemc.com/profile/faqpy.1" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="minecraft">
+                                    <Icon name="simple-icons:namemc" style="border-radius: 5px;" />
                                 </a>
-                                <a href="https://osu.ppy.sh/users/19575078" target="_blank" rel="noreferrer noopener" class="fab fab-inline" aria-label="Osu!">
+                                <a href="https://osu.ppy.sh/users/19575078" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="osu!">
                                     <Icon name="simple-icons:osu" />
                                 </a>
-                                <a href="https://music.youtube.com/@schizofuck" target="_blank" rel="noreferrer noopener" class="fab fab-inline" aria-label="Youtube Music">
+                                <a href="https://music.youtube.com/@schizofuck" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="youtube music">
                                     <Icon name="simple-icons:youtubemusic" />
                                 </a>
                             </div>
@@ -207,13 +207,13 @@ import { Icon } from 'astro-icon/components';
                 <div class="footer-card">
                     <div class="footer-content">
                         <div class="footer-links">
-                            <a href="mailto:hi@faqpy.me" aria-label="contact me" title="mail me!" class="footer-link">mail</a>
+                            <a href="mailto:hi@faqpy.me" aria-label="contact me" class="footer-link">mail</a>
                             <span class="footer-separator">✧</span>
                             <a href="/license" class="footer-link">license</a>
                             <span class="footer-separator">✧</span>
                             <a href="https://github.com/faqpy/faqpy.me" target="_blank" rel="noreferrer noopener" class="footer-link">source</a>
                             <span class="footer-separator">✧</span>
-                            <button id="music-toggle" class="footer-link btn-link" aria-label="toggle music" title="Toby Fox - The place where it rained (DELTARUNE Chapter 3+4 Soundtrack)">
+                            <button id="music-toggle" class="footer-link btn-link" aria-label="toggle music">
                                 music <Icon name="material-symbols:music-note" id="icon-play" style="font-size: 1em; vertical-align: middle;" /><Icon name="material-symbols:music-off" id="icon-pause" class="is-hidden" style="font-size: 1em; vertical-align: middle;" />
                             </button>
                         </div>
@@ -221,7 +221,7 @@ import { Icon } from 'astro-icon/components';
                             <Icon name="material-symbols:arrow-upward" style="font-size: 1em; vertical-align: middle;" /> back to top <Icon name="material-symbols:arrow-upward" style="font-size: 1em; vertical-align: middle;" />
                         </button>
                         <div class="footer-eexto eexto-grid">
-                            <a href="https://status.cafe/" title="status.cafe" target="_blank" rel="noreferrer noopener">
+                            <a href="https://status.cafe/" target="_blank" rel="noreferrer noopener">
                                 <img src="/assets/buttons/statuscafe.png" alt="status.cafe" draggable="false" class="eexto" />
                             </a>
                             <img src="/assets/buttons/anythingbutchrome.gif" alt="no chrome" draggable="false" class="eexto" />
