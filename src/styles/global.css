@@ -36,6 +36,7 @@
     --md-sys-color-surface-container-high: rgb(49 40 34);
     --md-sys-color-outline: rgb(159 141 131);
     --md-sys-color-shadow: 0 0 16px color-mix(in srgb, var(--md-sys-color-primary) 50%, transparent);
+    --md-sys-color-glow-filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.6));
 
     --card-radius: 28px;
     --list-radius: 16px;
@@ -102,31 +103,96 @@ body {
 .hero-banner {
     position: relative;
     width: 100%;
-    height: calc(100svh - 6em - 40px);
-    min-height: 512px;
-    max-height: 600px;
+    height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--md-sys-color-surface-container-lowest);
+    overflow: hidden;
 }
 
-.hero-banner::before {
-    content: '';
+.hero-video-bg {
     position: absolute;
     inset: 0;
-    background-image:
-        linear-gradient(to bottom, transparent 20%, var(--md-sys-color-surface-container-lowest) 95%),
-        url('/assets/images/hoshikawa-sara.webp');
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: 1;
-    opacity: 0.8;
+}
+
+.hero-video-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(20, 13, 8, 0.3) 0%, rgba(20, 13, 8, 1) 100%);
+    z-index: 2;
+    pointer-events: none;
 }
 
 .hero-banner-content {
     position: relative;
-    z-index: 2;
+    z-index: 3;
+    width: 100%;
+    padding: 0 var(--layout-gap);
+    display: flex;
+    justify-content: center;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.profile-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0 0 4px 0;
+    color: var(--md-sys-color-on-surface);
+    filter: var(--md-sys-color-glow-filter);
+}
+
+.profile-bio {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--md-sys-color-outline);
+    margin: 0 0 24px 0;
+    line-height: 1.5;
+}
+
+.profile-socials {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    font-size: 36px;
+    color: var(--md-sys-color-on-surface);
+    transition: color 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: var(--md-sys-color-glow-filter);
+}
+
+.social-icon:hover {
+    color: var(--md-sys-color-primary);
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 18px var(--md-sys-color-primary));
 }
 
 .content-section {
@@ -169,8 +235,7 @@ body {
     margin-top: 48px;
 }
 
-#about,
-#socials {
+#about {
     position: relative;
 }
 
@@ -270,60 +335,6 @@ body {
     line-height: 1.6;
 }
 
-.interactive-list {
-    border-radius: var(--list-radius);
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    overflow: hidden;
-}
-
-.list-item {
-    background: var(--md-sys-color-surface-container-low);
-    border-radius: var(--link-radius);
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 12px;
-    text-decoration: none;
-    color: var(--md-sys-color-on-surface);
-    transition: background 0.2s ease;
-}
-
-.list-item:hover {
-    background: var(--md-sys-color-surface-container-high);
-}
-
-.list-icon {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: var(--md-sys-color-surface-container-high);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    color: var(--md-sys-color-primary);
-}
-
-.list-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 2px;
-}
-
-.list-title {
-    font-family: var(--font-heading);
-    font-weight: 500;
-    font-size: 0.95rem;
-}
-
-.list-arrow {
-    font-size: 1.1rem;
-    color: var(--md-sys-color-outline);
-    flex-shrink: 0;
-}
 
 .eexto {
     width: 88px;
@@ -563,21 +574,6 @@ body {
     user-select: none;
 }
 
-.card-image.free-image {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 84px;
-    height: auto;
-    object-fit: contain;
-    max-height: none;
-    margin: 0;
-    z-index: 1;
-    pointer-events: none;
-    -webkit-user-select: none;
-    user-select: none;
-    transform: rotate(8deg);
-}
 
 .card-image-bg {
     background-image:
@@ -688,10 +684,6 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .hero-banner {
-        height: calc(100svh - 9em - 40px);
-        max-height: 900px;
-    }
 
     .card-nav {
         display: flex;
