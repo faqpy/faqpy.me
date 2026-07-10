@@ -562,14 +562,6 @@ body {
     overflow: hidden;
 }
 
-.content-pane {
-    max-height: 250px;
-    overflow-y: auto;
-    padding-right: 4px;
-    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-}
-
 .news-marquee {
     color: var(--md-sys-color-surface-container-low);
     background: var(--md-sys-color-on-surface-variant);

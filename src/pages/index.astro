@@ -172,18 +172,35 @@ import { Icon } from 'astro-icon/components';
                                 <Icon name="material-symbols:newspaper" class="card-icon-foreground" />
                             </div>
                             <h2 class="card-heading">newspaper</h2>
-                            <p class="card-subtitle">Tuesday, June 23rd, 2026</p>
-                            <div class="content-pane">
-                                <div class="card-article">
+                            <p class="card-subtitle">Saturday, July 11th, 2026</p>
+                            <div class="card-actions card-buttons" style="margin-top: 1rem;">
+                                <button class="btn-primary btn-primary-blur" style="color: var(--md-sys-color-primary);">
+                                    <m3e-dialog-trigger for="news-dialog" style="display: flex; align-items: center; gap: 8px;">2026 <Icon name="material-symbols:menu-book" class="btn-icon" /></m3e-dialog-trigger>
+                                </button>
+                                <button class="btn-primary btn-primary-blur" style="color: var(--md-sys-color-primary);">
+                                    <m3e-dialog-trigger for="news-dialog-2" style="display: flex; align-items: center; gap: 8px;">3026 <Icon name="material-symbols:image" class="btn-icon" /></m3e-dialog-trigger>
+                                </button>
+                            </div>
+                            
+                            <m3e-dialog id="news-dialog" dismissible>
+                                <span slot="header">jp is not for the weak</span>
+                                <div class="card-article" style="color: var(--md-sys-color-on-surface); font-family: var(--font-body); padding-bottom: 1rem;">
                                     <p>studying japanese through anki was really fun but it gets quite boring really quickly, so boring that you actually start skipping lessons. this is a problem because it makes it really hard to get back into the habit of studying. i guess i'll just have to find a way to make it more fun and interesting so that i can keep up with it again. <CustomEmoji src="/assets/emojis/tenna-dance.webp" name="tenna-dance" /></p>
                                     <img src="/assets/gifs/susie-eat-melon.webp" alt="susie eating melon" class="card-image" style="object-fit: contain; width: 80px;" draggable="false" />
                                     <p>if you're reading this and have any suggestions on how to make studying japanese more fun and interesting, please let me know! i'd really appreciate it, really. <CustomEmoji src="/assets/emojis/ralsei-tata.webp" name="ralsei-tata" /></p>
-                                    <img src="/assets/gifs/wobble-fw.webp" alt="wobbling" draggable="false" style="width: 80px;" /><br>
+                                    <img src="/assets/gifs/wobble-fw.webp" alt="wobbling" draggable="false" style="width: 80px;" />
                                 </div>
-                            </div>
+                            </m3e-dialog>
+                            <m3e-dialog id="news-dialog-2" dismissible>
+                                <span slot="header">im sick n tried</span>
+                                <div class="card-article" style="color: var(--md-sys-color-on-surface); font-family: var(--font-body); padding-bottom: 1rem;">
+                                    <img src="/assets/images/kris-bloxxy.webp" style="height: auto; width: 100%; display: block; max-width: 480px; border-radius: var(--list-radius);" alt="kris" draggable="false"  />
+                                </div>
+                            </m3e-dialog>
+
                             <img src="/assets/images/cunny.webp" class="card-image" alt="miau miau bunny" draggable="false" />
                             <div class="news-marquee">
-                                <marquee behavior="scroll" direction="left"><span style="font-weight: bold; color: var(--md-sys-color-error-container);">breaking news:</span> meta description my arch enemy confirmed, this thing has given me nightmares &gt;&#58;&#40;</marquee>
+                                <marquee behavior="scroll" direction="left"><span style="font-weight: bold; color: var(--md-sys-color-error-container);">breaking news:</span> miau miau miau? MIAU! miau miau maaouu mrrp miau! miau purr &#58;3</marquee>
                             </div>
                         </section>
 
@@ -237,6 +254,7 @@ import { Icon } from 'astro-icon/components';
     </div>
     <script>
         import '@m3e/web/shape';
+        import '@m3e/web/dialog';
     </script>
     <script>
         const copyBtn = document.querySelector('#copy-btn');
