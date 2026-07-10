@@ -399,6 +399,7 @@ body {
     gap: 8px;
     text-decoration: none;
     width: fit-content;
+    transition: background 0.2s ease, border-radius 0.2s ease;
 }
 
 .btn-primary:hover {
