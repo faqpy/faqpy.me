@@ -638,6 +638,31 @@ body {
     margin: 0;
 }
 
+.lastfm-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.lastfm-song {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--md-sys-color-on-surface);
+    text-decoration: none;
+}
+
+.lastfm-artist {
+    font-size: 0.8rem;
+    color: var(--md-sys-color-outline);
+    text-decoration: none;
+}
+
+.lastfm-song:hover,
+.lastfm-artist:hover {
+    text-decoration: underline;
+}
+
 .card-divider {
     border: none;
     border-top: 1px solid var(--md-sys-color-surface-variant);

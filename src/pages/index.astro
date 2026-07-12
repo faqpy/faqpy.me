@@ -60,6 +60,7 @@ import { Icon } from 'astro-icon/components';
                     <a href="#games">mmmgemes</a>
                     <a href="#notes">notes</a>
                     <a href="#newspaper">news</a>
+                    <a href="#lastfm">music</a>
                 </nav>
                 <div class="content-layout">
 
@@ -204,6 +205,19 @@ import { Icon } from 'astro-icon/components';
                             </div>
                         </section>
 
+                        <section class="card card-image-bg" id="lastfm">
+                            <div class="card-icon-wrapper icon-secondary">
+                                <m3e-shape name="circle" class="m3e-icon-bg" style="--m3e-shape-container-color:var(--md-sys-color-secondary-container);"></m3e-shape>
+                                <Icon name="material-symbols:music-note" class="card-icon-foreground" />
+                            </div>
+                            <h2 class="card-heading">now playing</h2>
+                            <p class="card-subtitle" id="lastfm-status">loading...</p>
+                            <div class="lastfm-info" id="lastfm-track">
+                                <a class="lastfm-song" id="lastfm-song" href="#" target="_blank" rel="noreferrer noopener"></a>
+                                <a class="lastfm-artist" id="lastfm-artist" href="#" target="_blank" rel="noreferrer noopener"></a>
+                            </div>
+                        </section>
+
                         <section class="card" id="webrings">
                             <h2 class="card-heading">webrings</h2>
                             <div class="webring-list">
@@ -255,39 +269,9 @@ import { Icon } from 'astro-icon/components';
     <script>
         import '@m3e/web/shape';
         import '@m3e/web/dialog';
-    </script>
-    <script>
-        const copyBtn = document.querySelector('#copy-btn');
-        const backToTopBtn = document.querySelector('#back-to-top');
-        
-        if (backToTopBtn) {
-            backToTopBtn.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        }
-        
-        const scrollDownBtn = document.querySelector('#scroll-down-btn');
-        if (scrollDownBtn) {
-            scrollDownBtn.addEventListener('click', () => {
-                const firstCard = document.querySelector('.content-section');
-                if (firstCard) {
-                    firstCard.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        }
-        
-        const copyLabel = document.querySelector('#copy-label');
-        const embedCode = '<a href="https://faqpy.me" target="_blank" rel="noreferrer noopener"><img src="https://faqpy.me/button.png" alt="faqpy.me" width="88" height="31" /></a>';
-        if (copyBtn) {
-            copyBtn.addEventListener('click', () => {
-                navigator.clipboard.writeText(embedCode).then(() => {
-                    if (copyLabel) copyLabel.textContent = 'copied!';
-                    setTimeout(() => {
-                        if (copyLabel) copyLabel.textContent = 'click to copy';
-                    }, 2000);
-                });
-            });
-        }
+        import '../scripts/scroll.js';
+        import '../scripts/copy-button.js';
+        import '../scripts/lastfm.js';
     </script>
 </body>
 
