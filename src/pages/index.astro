@@ -30,27 +30,33 @@ import { Icon } from 'astro-icon/components';
                         <p class="profile-bio">(a.k.a witchie)</p>
                         
                         <div class="profile-socials">
-                            <a href="https://github.com/faqpy" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="github">
+                            <a id="social-github" href="https://github.com/faqpy" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="github">
                                 <Icon name="simple-icons:github" />
                             </a>
-                            <a href="https://discord.com/users/277867160796397568" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="discord">
+                            <m3e-tooltip for="social-github" position="below">github</m3e-tooltip>
+                            <a id="social-discord" href="https://discord.com/users/277867160796397568" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="discord">
                                 <Icon name="simple-icons:discord" />
                             </a>
-                            <a href="https://bsky.app/profile/faqpy.me" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="bluesky">
+                            <m3e-tooltip for="social-discord" position="below">discord</m3e-tooltip>
+                            <a id="social-bsky" href="https://bsky.app/profile/faqpy.me" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="bluesky">
                                 <Icon name="simple-icons:bluesky" />
                             </a>
-                            <a href="https://x.com/faqpy" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="twitter">
+                            <m3e-tooltip for="social-bsky" position="below">bluesky</m3e-tooltip>
+                            <a id="social-twitter" href="https://x.com/faqpy" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="twitter">
                                 <Icon name="simple-icons:twitter" />
                             </a>
-                            <a href="https://instagram.com/faqpy" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="instagram">
+                            <m3e-tooltip for="social-twitter" position="below">twitter</m3e-tooltip>
+                            <a id="social-ig" href="https://instagram.com/faqpy" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="instagram">
                                 <Icon name="simple-icons:instagram" />
                             </a>
+                            <m3e-tooltip for="social-ig" position="below">instagram</m3e-tooltip>
                         </div>
                     </div>
                 </div>
                 <button id="scroll-down-btn" class="btn-primary btn-primary-blur" style="position: absolute; bottom: 24px; right: 24px; color: var(--md-sys-color-primary); z-index: 10;" aria-label="scroll down">
                     scroll <Icon name="material-symbols:keyboard-arrow-down" class="btn-icon" />
                 </button>
+                <m3e-tooltip for="scroll-down-btn" position="before">go down!</m3e-tooltip>
             </section>
 
             <section class="content-section">
@@ -123,21 +129,26 @@ import { Icon } from 'astro-icon/components';
                             <h2 class="card-heading">i play games <CustomEmoji src="/assets/emojis/susie-eager.webp" name="susie-eager" /></h2>
                             <p class="card-subtitle">although i rarely play any games now, mmmgemes</p>
                             <div class="profile-socials" style="justify-content: flex-start; margin-top: 4px;">
-                                <a href="https://steamcommunity.com/id/schizofuck" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="steam">
+                                <a id="game-steam" href="https://steamcommunity.com/id/schizofuck" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="steam">
                                     <Icon name="simple-icons:steam" />
                                 </a>
-                                <a href="https://www.roblox.com/users/802402672/profile" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="roblox">
+                                <m3e-tooltip for="game-steam" position="below">steam</m3e-tooltip>
+                                <a id="game-roblox" href="https://www.roblox.com/users/802402672/profile" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="roblox">
                                     <Icon name="simple-icons:roblox" />
                                 </a>
-                                <a href="https://namemc.com/profile/faqpy.1" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="minecraft">
+                                <m3e-tooltip for="game-roblox" position="below">roblox</m3e-tooltip>
+                                <a id="game-namemc" href="https://namemc.com/profile/faqpy.1" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="minecraft">
                                     <Icon name="simple-icons:namemc" style="border-radius: 10px;" />
                                 </a>
-                                <a href="https://osu.ppy.sh/users/19575078" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="osu!">
+                                <m3e-tooltip for="game-namemc" position="below">minecraft</m3e-tooltip>
+                                <a id="game-osu" href="https://osu.ppy.sh/users/19575078" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="osu!">
                                     <Icon name="simple-icons:osu" />
                                 </a>
-                                <a href="https://music.youtube.com/@schizofuck" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="youtube music">
+                                <m3e-tooltip for="game-osu" position="below">osu!</m3e-tooltip>
+                                <a id="game-ytm" href="https://music.youtube.com/@schizofuck" target="_blank" rel="noreferrer noopener" class="social-icon" aria-label="youtube music">
                                     <Icon name="simple-icons:youtubemusic" />
                                 </a>
+                                <m3e-tooltip for="game-ytm" position="below">youtube music</m3e-tooltip>
                             </div>
 
                         </section>
@@ -238,15 +249,19 @@ import { Icon } from 'astro-icon/components';
                 <div class="footer-card">
                     <div class="footer-content">
                         <div class="footer-links">
-                            <a href="mailto:hi@faqpy.me" aria-label="contact me" class="footer-link">mail</a>
+                            <a id="footer-mail" href="mailto:hi@faqpy.me" aria-label="contact me" class="footer-link">mail</a>
+                            <m3e-tooltip for="footer-mail" position="above">hi@faqpy.me</m3e-tooltip>
                             <span class="footer-separator">✧</span>
-                            <a href="/license" class="footer-link">license</a>
+                            <a id="footer-license" href="/license" class="footer-link">license</a>
+                            <m3e-tooltip for="footer-license" position="above">copyright and usage</m3e-tooltip>
                             <span class="footer-separator">✧</span>
-                            <a href="https://github.com/faqpy/faqpy.me" target="_blank" rel="noreferrer noopener" class="footer-link">source</a>
+                            <a id="footer-source" href="https://github.com/faqpy/faqpy.me" target="_blank" rel="noreferrer noopener" class="footer-link">source</a>
+                            <m3e-tooltip for="footer-source" position="above">view on github</m3e-tooltip>
                             <span class="footer-separator">✧</span>
                             <button id="music-toggle" class="footer-link btn-link" aria-label="toggle music">
                                 music <Icon name="material-symbols:music-note" id="icon-play" style="font-size: 1em; vertical-align: middle;" /><Icon name="material-symbols:music-off" id="icon-pause" class="is-hidden" style="font-size: 1em; vertical-align: middle;" />
                             </button>
+                            <m3e-tooltip for="music-toggle" position="above">toggle background music</m3e-tooltip>
                         </div>
                         <div class="footer-eexto eexto-grid">
                             <a href="https://status.cafe/" target="_blank" rel="noreferrer noopener">
@@ -266,6 +281,7 @@ import { Icon } from 'astro-icon/components';
     <script>
         import '@m3e/web/shape';
         import '@m3e/web/dialog';
+        import '@m3e/web/tooltip';
         import '../scripts/scroll.js';
         import '../scripts/copy-button.js';
         import '../scripts/lastfm.js';
